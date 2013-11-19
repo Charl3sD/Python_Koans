@@ -18,11 +18,8 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
-    #mesure des cotés > 0 ?
     test1 = cmp(a, 0) + cmp(b, 0) + cmp(c, 0)
-    #le coté le plus long > que les deux plus courts combinés ?
     test2 = max(a,b,c) < ((a+b+c) - max(a,b,c))
-    #combiens de cotés égaux ?
     test3 = set([a,b,c])
     if test1 == 3:
         if test2 == True:
